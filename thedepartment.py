@@ -117,7 +117,7 @@ print(f"Department Assignment Table: {cursor.rowcount} records inserted")
 #Insert Sample Data to  Project Assignment Table
 sql = "INSERT INTO project_assignment \
   values (:values(0), :values(1))"
-values = (6,1)
-cursor.execute(sql,values)
+value = (6,1)
+cursor.execute(sql,value)
 conn.commit()
 print(f"Project Assignment Table: {cursor.rowcount} records inserted")
