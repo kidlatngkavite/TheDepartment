@@ -65,7 +65,6 @@ values = [
   ("Padilla", "Daniel", "J"),
   ("Diaz", "Ogie", "M")
   ]
-print(sql,values)
 cursor.executemany(sql,values)
 conn.commit()
 print(f"Employee Table: {cursor.rowcount} records inserted")
