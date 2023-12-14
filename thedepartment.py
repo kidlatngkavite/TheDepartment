@@ -121,3 +121,7 @@ value = (6,1)
 cursor.execute(sql,value)
 conn.commit()
 print(f"Project Assignment Table: {cursor.rowcount} records inserted")
+
+#close the cursor and connection
+cursor.close
+conn.close
